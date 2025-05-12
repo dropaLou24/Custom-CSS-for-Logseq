@@ -1,0 +1,148 @@
+/* === 12.05.2025 Custom Logseq CSS === */
+
+
+/* Font + Typography */
+:root {
+  --ls-font-family: "Avenir", sans-serif;
+  --ls-page-text-size: 16px;
+  --ls-page-title-size: 1.6rem;
+ }
+  
+/* Block content size normalization */ 
+  .block-content h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .block-content h2,
+  .block-content h3,
+  .block-content h4,
+  .block-content h5,
+  .block-content h6 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+/* Layout */ 
+/*  --ls-main-content-max-width: 720px; */
+
+/* Thread lines */
+/*  --ls-block-bullet-thread-line-color: #ccc; */
+  
+/* Colors */
+   /* H1 - Light Blue */
+   .block-content h1 {
+        border-style: solid dotted dotted solid;
+        border-width: medium;
+        border-color:  #BBDEFB; /* light blue */
+        color: #333; /* dark gray text for good contrast */
+        padding: 6px;
+        border-radius: 8px;
+    }
+
+  /* H2 - Soft Orange */
+  .block-content h2 {
+      border-style: solid dotted dotted solid;
+      border-width: medium;
+      border-color: #FFE0B2; /* light orange */
+      padding: 6px;
+      border-radius: 8px;
+  }
+
+  /* H3 - Bright Yellow */
+  .block-content h3 {
+      border-style: solid dotted dotted solid;
+      border-width: medium;
+      border-color: #FFF9C4; /* light yellow */
+      color: #333;
+      padding: 6px;
+      border-radius: 8px;
+  }
+
+  /* H4 - Mint Green */
+  .block-content h4 {
+      border-style: solid dotted dotted solid;
+      border-width: medium;
+      border-color: #C8E6C9; /* light green */
+      color: #333;
+      padding: 6px;
+      border-radius: 8px;
+  }
+
+  /* H5 - Soft Pink */
+  .block-content h5 {
+      border-style: solid dotted dotted solid;
+      border-width: medium;
+      border-color: #F8BBD0; /* light pink */
+      color: #333;
+      padding: 6px;
+      border-radius: 8px;
+  }
+  
+  /* H6 - Pale Purple */
+  .block-content h6 {
+      border-style: solid dotted dotted solid;
+      border-width: medium;
+      border-color: #E1BEE7; /* light purple */
+      color: #333;
+      padding: 6px;
+      border-radius: 8px;
+  }
+  
+  /* Page references matching inside headings */
+  h1 a.page-ref,
+  h2 a.page-ref,
+  h3 a.page-ref,
+  h4 a.page-ref,
+  h5 a.page-ref,
+  h6 a.page-ref {
+      color: inherit; /* Match heading text color */
+      text-decoration: remove underline;
+  }
+
+/* === Italics and bold === */
+.block-content em, .block-content i {
+  color: #FFC300 !important;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.block-content b,
+.block-content strong {
+  color: #900C3F !important;
+  font-weight: bold;
+}
+
+.page-ref b,
+.page-ref strong  {
+	color: #900C3F !important;
+}
+
+/* === Optional Enhancements === */
+.block-content a.tag {
+  background-color: #25959D;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.block-content .priority {
+  font-weight: bold;
+  color: #D7263D;
+}
+
+.block-content .marker {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* Transitions */
+/* Smooth transition when hovering (optional) */
+h1, h2, h3, h4, h5, h6 {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Optional Hover Effect - Highlight when mouse over */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    background-color: #FFECB3; /* slight yellow glow on hover */
+
